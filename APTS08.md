@@ -82,6 +82,7 @@ Por lo tanto, en una predicción de $T_d$ a través de enfriamientos isobáricos
 Debido a la relación (11) ó (12) $T_d$ y $e$ son parámetros de humedad que dan información equivalente.
 
 ---
+![alt text](image.png)
 
 ## Curva de Saturación. Cambios Relativos.
 
