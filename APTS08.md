@@ -1,0 +1,711 @@
+El archivo adjunto digitalizado, incluyendo el texto, las ecuaciones y la indicación de las figuras, es el siguiente:
+
+***
+
+## Procesos Termodinámicos en la Atmósfera
+
+Ahora vamos a estudiar algunos procesos termodinámicos importantes en la atmósfera, los cuales pueden clasificarse en tres categorías:
+
+### a). Procesos Isobáricos:
+$$d\hat{q} \ne 0; d P = 0 \Rightarrow d h = d^j \hat{q}$$
+Recordemos que:
+$$d h = d \hat{\Psi} + v d p$$
+(1)
+
+### b). Procesos Adiabáticos:
+$$d\tilde{q} = 0; d P \ne 0 \Rightarrow d h = v d p$$
+(2)
+(3)
+
+### c). Procesos Adiabáticos e Isobáricos; es decir, Isoentálpicos:
+$$d\tilde{q} = 0 \text{ y } d P = 0 \Rightarrow d h = 0 \Rightarrow h = C_{pd}T + \mathcal{l}_{v}q = cte$$
+ó también:
+$$h = \mathcal{C}_{pd}T + \mathcal{l}_{v}r = cte$$
+(4)
+
+### a) Enfriamiento Isobárico. Punto de Rocío y Punto de Congelación.
+
+Consideremos una masa de aire húmedo enfriándose a presión constante y por lo tanto, contrayéndose.
+
+Las variables $e, r \text{ y } q$:
+$$r = q \simeq \frac{\epsilon e}{P}$$
+$$e \approx \frac{r}{\epsilon} P$$
+(5)
+(6)
+
+permanecen constantes dado que el proceso es isobárico, que la masa de aire no intercambia masa con sus alrededores.
+Dado que la presión del vapor de saturación $e_w$ es una función monótonicamente creciente de la temperatura, se tiene que $e_w$ disminuye, en el enfriamiento isobárico, pudiendo alcanzar el valor de $e$, la cual permanece constante y por lo tanto, la **humedad relativa** $U_w$, dada por:
+$$U_{w} = \frac{e}{e_{w}}$$
+(7)
+toma el valor de uno (o el $100\%$), llegando la masa de aire a la **saturación**.
+
+La temperatura de una masa de aire a la cual, en un enfriamiento isobárico, se le llama **temperatura del punto de rocío** ó simplemente **punto de rocío** ($T_d$).
+
+Por lo tanto, la temperatura del punto de rocío se puede determinar de la ecuación:
+$$\mathcal{E}_{w}(T_{d}) = e$$
+$$U_{w}(T_{d}) = e/e_{w} = 1$$
+(8)
+
+Si la saturación es alcanzada, a temperaturas abajo de $0^\circ C$, la temperatura se llama **temperatura del punto de congelación**, $T_f$.
+
+Ahora vamos a encontrar una relación entre el incremento relativo de la temperatura del punto de rocío y los correspondientes incrementos relativos, en la razón de mezcla y la presión total.
+
+Para ello usaremos la ec. de Clausius-Clapeyron:
+Diferenciando logarítmicamente la expresión (6); tenemos que:
+$$d \ln e = d \ln r + d \ln P$$
+(9)
+
+Cambios diferenciales, de $\ln e_w$ alrededor de la temperatura del punto de rocío, $T_d$, pueden determinarse de la ecuación de Clausius-Clapeyron:
+$$\frac{d \ln e_{w}}{d T_{d}} = \frac{\mathcal{l}_{v}}{R_{v} T_{d}^{2}}$$
+(10)
+
+es decir:
+$$d T_{d} = \frac{R_{v} T_{d}^{2}}{\mathcal{l}_{v}} d \ln e_{w} (T_{d}) = \frac{R_{v} T_{d}^{2}}{\mathcal{l}_{v}} d \ln e$$
+(11)
+
+en donde hemos usado la ec. (8).
+Sustituyendo la ec. (9) en la ec. (11) resulta que:
+$$\frac{d \ln T_{d}}{d \ln T_{d}} = \frac{R_{v} T_{d}}{\mathcal{l}_{v}} (d \ln r + d \ln P)$$
+(12)
+
+Si los cambios relativos en $r$ y $P$ ocurren alrededor de una temperatura de punto de rocío de igual a $10^\circ C$, entonces considerando que: $R_{v} = 461.6 J kg^{-1} K^{-1}$; $\mathcal{l}_{v} = 2.5 \times 10^6 J Kg^{-1}$; resulta:
+
+$$\frac{\Delta T_{d}}{T_{d}} \approx 0.05 [\frac{\Delta r}{r} + \frac{\Delta p}{p}]$$
+(13)
+(Para $T_d = 10^\circ C$ es decir $T_d = 283.16 K$).
+
+Por ejemplo, suponemos que con un enfriamiento isobárico la masa experimenta una presión $\Delta P = 20 mb$ mayor, entonces:
+$$\frac{\Delta T_{d}}{T_{d}} = 0.05 \times \frac{20}{1000} = 0.001$$
+es decir $\Delta T_d = 0.28^\circ C$, por lo que la temperatura del punto de rocío será $10.28^\circ C$.
+
+Por lo tanto, en una predicción de $T_d$ a través de enfriamientos isobáricos no importa mucho el cambio de presión, por ejemplo, $20 mb$, el cálculo de $T_d$ durante un enfriamiento real tendrá un error pequeño, según (14).
+Debido a la relación (11) ó (12) $T_d$ y $e$ son parámetros de humedad que dan información equivalente.
+
+---
+
+## Curva de Saturación. Cambios Relativos.
+
+$$\frac{\Delta T_{d}}{T_{d}} = \frac{R_{v} T_{d}}{\mathcal{l}_{v}} \frac{\Delta e}{e}$$
+
+[Figura: Fig. VI-I Cambios relativos en $T_d$]
+El diagrama muestra $e, e_w(T), e=e_w(T_d)$ vs. $T$, con puntos $P, Q, T_d, T$ en un **Enfriamiento Isobárico de P a Q**.
+
+Ahora vamos a integrar la ec. de Clausius-Clapeyron:
+$$\frac{d \ln e_{w}}{d T} = \frac{\mathcal{l}_{v}}{R_{v} T^{2}}$$
+entre $T_d$ y $T$ (entre $Q$ y $R$ en la Fig. VI-1):
+$$\ln [\frac{e_{w}(T)}{e_{w}(T_{d})}] = \ln [\frac{e_{w}(T)}{e}] = -\ln U_{w} = \frac{1}{R_{v}} \int_{T_{d}}^{T} \frac{\mathcal{l}_{v}}{T^{2}} d T \approx \frac{\mathcal{l}_{v}}{R_{v}} (\frac{T-T_{d}}{T T_{d}})$$
+(15)
+
+es decir:
+$$U_{w} = \exp [-\frac{\mathcal{l}_{v}}{R_{v}} \cdot \frac{T-T_{d}}{T T_{d}}]$$
+(16)
+(17)
+
+[Figura: Gráfica de Depresión del Punto de Rocío (Ec. 17)]
+**Fig. VI-1 Depresión del punto de rocío, según la ec. (17)**.
+La depresión del punto de rocío ($\mathbf{T-T_D}$) fija las condiciones de humedad relativa ($U_w$), pero las condiciones de humedad relativa dependen de la temperatura del aire. [cite_start]Por ejemplo, a una depresión fija de $5^\circ C$, a una temperatura ambiente de $T = 2^\circ C$, la humedad relativa sería de un $40\%$ [cita: 440] (se lee $40\%$ en el gráfico en $T-T_D=5^{\circ}C$ para $T=2^{\circ}C$); a $T = 24^\circ C$ sería superior al $60\%$ (aproximadamente $65\%$) [cite: 444][cite_start]; y a $T = 46^\circ C$ sería de un $80\%$[cite: 443].
+
+La ec. (16) o (17) dan una estimación de $T-T_d$ como una función de $U_w$ conocida como **depresión**, cuando se toma del calor latente $\mathcal{l}_v$ constante.
+
+Dando valores a $R_v$ y $\mathcal{l}_v$, la ec. (16) puede expresarse como:
+$$T - T_{d} = 1.846 \times 10^{-4} T T_{d} (-\ln U_{w})$$
+(18)
+
+En latitudes medias la temperatura promedio es de unos $17^\circ C$ sobre la superficie, de manera que $T T_d \approx (290 K)^2$; resultando que:
+$$T - T_{d} \approx 15.52 (-\ln U_{w}) \quad \text{(depresión)}$$
+(19)
+
+Por ejemplo, de acuerdo con (19) que $T - T_d = 5.53^\circ$ si en la superficie $U_w = 70\%$.
+
+## Temperatura del punto de congelación.
+
+Ahora vamos a considerar el caso cuando la curva de equilibrio de transición de fase es alcanzada en un enfriamiento isobárico, a temperaturas por abajo de la temperatura del punto triple del agua. A la temperatura a la cual dicha curva es alcanzada en el enfriamiento isobárico, se le llama **temperatura del punto de congelación** ($T_f$).
+
+[Figura: Fig. VI-2 Diagrama de fases e vs T]
+**Fig. VI-2. Temperaturas del punto de congelación ($T_f$) y de punto de rocío ($T_d$), alcanzadas por enfriamiento isobárico del punto $P \alpha F \text{ y de } P \alpha D$, respectivamente.**
+El diagrama muestra el equilibrio **sólido, líquido, vapor** con el punto triple $P_t$ en ($T_t, e_t$). El enfriamiento isobárico va de $P$ horizontalmente a la izquierda. Los puntos de equilibrio son $D$ ($e=e_i(T_f)=e_w(T_d)$) y $F$ ($e=e_i(T_f)$) siendo $e_i$ la presión de vapor sobre el hielo. La figura corresponde a el caso $e_{t}$.
+
+1.  Para el caso de la Fig. VI-1 la condensación tiene lugar en el enfriamiento isobárico cuando la temperatura del punto de rocío se ha alcanzado en el punto $Q$. Sin embargo, este proceso, requiere la presencia de superficies sólidas o ciertas partículas microscópicas, llamadas **núcleos de condensación**. Si ninguno de estos elementos está presente, la condensación no ocurre en el punto $Q$ y el aire puede supersaturarse con respecto al agua ($e > e_w(T)$). Sin embargo, la atmósfera contiene siempre abundantes núcleos de condensación y la supersaturación difícilmente ocurre.
+
+2.  La situación es diferente en el caso de la Fig. VI-2. Si existen superficies de hielo, la sublimación o la congelación se llevará a cabo sobre estas superficies tan pronto como se alcance la **Curva de equilibrio de sublimación** en el punto $F$ de la Fig. VI-2. En ausencia de superficies de hielo, ciertas superficies o diminutas partículas que constituyen los aerosoles favorecen la aparición de cristales de hielo; sin embargo, la congelación en el enfriamiento isobárico generalmente ocurre antes del punto $F$. Entre $F$ y $D$ el aire puede supersaturarse con respecto al hielo ($e > e_i(T)$) y puede únicamente condensarse en agua líquida sobreenfriada en el punto $D$. Sobre la curva de equilibrio meta-estable, en donde la congelación puede ocurrir. Sin embargo, ninguna nucleación espontánea tiene lugar en pequeños enfriamientos de agua, por lo que en las nubes puede existir agua superenfriada a temperaturas de vapor de agua hasta $-30^\circ C$.
+
+Ahora vamos a integrar la ec. de Clausius-Clapeyron a lo largo de las curvas de vaporización y sublimación para relacionar la temperatura de rocío y la temperatura de congelación.
+
+Tomando en cuenta la Fig. VI-2, integramos la ec. de Clausius-Clapeyron entre el punto triple $P_t$ a lo largo de la **curva de vaporización** (Puntos $P_t$ a $D$); encontramos que:
+$$\ln \frac{e_{t}}{e} = \frac{\mathcal{l}_{v}}{R_{v}} \frac{T_{t}-T_{d}}{T_{t} T_{d}}$$
+(20)
+donde hemos considerado que: $e = e_{w}(T_{d})$ y que $\mathcal{l}_v$ es constante.
+
+Ahora integrando la ec. de Clausius-Clapeyron entre el punto $F$ y $P_t$, obtenemos que:
+$$\ln \frac{e_{t}}{e} = \frac{\mathcal{l}_{s}}{R_{v}} \frac{T_{t}-T_{f}}{T_{t} T_{f}}$$
+(21)
+donde hemos considerado que $e = e_{i}(T_{f})$ y que $\mathcal{l}_s$ es constante.
+
+Igualando (20) y (21) obtenemos que:
+$$\frac{T_{t}-T_{d}}{T_{t}-T_{f}} = \frac{T_{d}}{T_{f}} \frac{\mathcal{l}_{s}}{\mathcal{l}_{v}}$$
+(22)
+
+Usando la aproximación $T_{d}/T_{f} \approx 1$ se tiene que:
+$$T_{t} - T_{d} = (\frac{\mathcal{l}_{s}}{\mathcal{l}_{v}}) (T_{t} - T_{f})$$
+(23)
+
+Tomando el valor de $\mathcal{l}_s \text{ y } \mathcal{l}_v \text{ a } -10^\circ C$ se tiene que:
+$$\mathcal{l}_{s}/\mathcal{l}_{v} \approx 9/8$$
+(24)
+
+Dado que $T_t = 273.16 K$ corresponde aproximadamente a $0^\circ C$, la relación (23) puede expresarse usando (24) como:
+$$|T_{d}| \approx \frac{9}{8} |T_{f}|$$
+(25)
+
+o también como:
+$$|T_{d} - T_{f}| \approx \frac{1}{8} |T_{f}|$$
+(26)
+donde $T_d \text{ y } T_f$ están expresadas en $^\circ C$.
+
+Por lo tanto, si la curva de sublimación es alcanzada por enfriamiento isobárico a $-15^\circ C$, es decir: $T_f = -15^\circ C$, entonces $|T_d - T_f| \approx 1/8 \cdot 15^\circ C \approx 1.9^\circ C$. Por lo tanto, la condensación en agua sobreenfriada tendrá lugar a una temperatura de $T_d \approx -16.9^\circ C$. Si la condensación tiene lugar en la superficie de las alas de un avión, entonces a esta temperatura puede iniciarse de manera espontánea la formación de hielo sobre dicha superficie.
+
+## Condensación en la Atmósfera por Enfriamiento Isobárico.
+
+Durante las noches claras, la pérdida de calor por emisión de radiación de la superficie de los cuerpos o del suelo, puede hacer que su temperatura caiga por debajo de la temperatura del punto de rocío o de congelación del aire en contacto con ellos; ello producirá que se forme rocío o escarcha sobre dichas superficies como resultado de la condensación del vapor de agua.
+
+Si una parcela de aire no saturado se enfría isobáricamente hasta que su temperatura queda por abajo de la temperatura del punto de rocío, la condensación ocurrirá como pequeñas gotas de agua formadas sobre **núcleos de condensación**. Esto es lo que se conoce como **niebla**. Este fenómeno ocurre en la atmósfera debido al **enfriamiento radiativo** del aire mismo o del suelo en contacto con el aire; este tipo de niebla se conoce como **niebla por radiación**. Las microscópicas gotas de agua que forman la niebla emiten radiación como cuerpos negros, a la temperatura de la niebla; dicha radiación emitida por la capa de niebla favorece el enfriamiento y ello mantiene la capa de niebla; sin embargo, el enfriamiento es parcialmente compensado por el calor latente liberado por la condensación del vapor de agua.
+
+La niebla por radiación que aparece por las mañanas frías requiere que:
+1.  Durante la noche previa el cielo esté libre de nubes para evitar el efecto invernadero y favorecer la pérdida de calor del suelo por radiación.
+2.  Condiciones de humedad relativa alta ($\approx 70 \text{ a } 80\%$).
+3.  Vientos suaves que no favorezcan el calentamiento del aire por advección o disminuyan la humedad relativa por mezcla con aire seco.
+
+La condensación por enfriamiento isobárico también puede ocurrir cuando una parcela de aire húmedo se mueve horizontalmente sobre el suelo o regiones frías, por lo que la masa de aire es enfriada por conducción térmica hacia la superficie fría; este tipo de niebla se le conoce como **niebla por advección**.
+
+De las dos ecuaciones que expresan el cambio diferencial de entalpía:
+$$d h = d \hat{q} + v d P$$
+(27)
+$$d h = C_{pd} d T + \mathcal{l}_{v} d q$$
+(28)
+encontramos que en el caso de enfriamientos isobáricos:
+$$d \hat{q} = C_{pd} d T + \mathcal{l}_{v} d q$$
+(29)
+
+En el enfriamiento isobárico antes de que la curva de saturación sea alcanzada $d q = 0$, por lo que la ec. (29) se reduce a:
+$$d \hat{q} = C_{pd} d T$$
+(30)
+y cuando la curva de saturación es alcanzada, la ec. (29) puede expresarse como:
+$$d \hat{q} = C_{pd} d T + \mathcal{l}_{v} d q_{w}$$
+(31)
+donde
+$$q_{w} \approx \frac{0.622 e_{w}}{P}$$
+(32)
+es la humedad específica sobre la curva de saturación.
+
+Aplicando la ec. de Clausius-Clapeyron, encontramos que:
+$$d q_{w} = \frac{q_{w} \mathcal{l}_{v}}{R_{v} T^{2}} d T$$
+(33)
+donde hemos considerado que $d P = 0$.
+
+Sustituyendo (33) en (31) obtenemos que:
+$$d \hat{q} = (C_{pd} + \frac{q_{w} \mathcal{l}_{v}^{2}}{R_{v} T^{2}}) d T$$
+(34)
+
+En la ec. (30) uno puede calcular $d \hat{q}$ para una capa atmosférica de espesor $H$, asumiendo que esta capa absorbe como cuerpo negro entre $0 \text{ y } 8 \mu m$ y entre $13 \mu m$ y el fin del espectro de radiación de onda larga; y considerando que entre $8 \text{ y } 13 \mu m$ existe una ventana conocida como **ventana de Simpson** en donde la radiación proveniente de la superficie del suelo no es absorbida. Una vez formada la niebla, en la ec. (34) podemos suponer que la capa atmosférica superficial emite y absorbe como cuerpo negro.
+Por su parte, se puede considerar que la superficie del suelo emite como cuerpo negro.
+
+Si el enfriamiento tiene lugar durante la noche libre de nubes, entonces $d \hat{q}$ en (30) o (34) no incluye la insolación, ni el efecto de las nubes en la radiación de onda corta y larga. Además podemos asumir que en dicha capa no existe el transporte de calor por viento y turbulencia horizontal ni tampoco la convección de calor por movimiento vertical; estas consideraciones facilitan enormemente el cálculo de $d \hat{q}$.
+
+## Densidad de la Niebla.
+
+Asumiendo que el vapor de agua saturado se comporta como un gas ideal; entonces la masa de vapor de agua por unidad de volumen $\rho_w$ se puede expresar como:
+$$\rho_{w} = \frac{e_{w}}{R_{v} T}$$
+(35)
+esta cantidad comienza a disminuir cuando la condensación tiene lugar en la formación de la niebla. El cambio diferencial en $\rho_w$ está dado por:
+$$d \rho_{w} = \frac{d e_{w}}{R_{v} T} - \frac{e_{w}}{R_{v} T^{2}} d T$$
+(36)
+
+Usando la ec. de Clausius-Clapeyron, en (36) tenemos que:
+$$d \rho_{w} = (\frac{\mathcal{l}_{v}}{R_{v} T} - 1) \frac{e_{w}}{R_{v} T^{2}} d T$$
+(37)
+
+Para $T = 273.16 K$; $\frac{\mathcal{l}_v}{R_v T} \approx 19.8$, por lo que la ec. (37) puede aproximarse a:
+$$d \rho_{w} \approx \frac{\mathcal{l}_{v} e_{w}}{R_{v}^{2} T^{3}} d T$$
+(38)
+
+La masa condensada por unidad de volumen se puede expresar como: $d C = - d \rho_{w}$; por lo que:
+$$d C = - \frac{\mathcal{l}_{v} e_{w}}{R_{v}^{2} T^{3}} d T$$
+(39)
+
+Integrando la ec. (39); resulta que:
+$$C = C_{a} - \int_{T_{d}}^{T} \frac{\mathcal{l}_{v} e_{w}}{R_{v}^{2} T^{3}} d T$$
+(40)
+donde $e_w$ puede ser expresada como:
+$$e_{w} = A + B T + C T^{2} + D T^{3} + L T^{4}$$
+(41)
+donde $A, B, \dots, L$ son coeficientes conocidos.
+Asumiendo que $\mathcal{l}_v$ es constante, la integral (40) resulta que:
+$$C = \frac{\mathcal{l}_{v}}{R_{v}^{2}} [\frac{1}{2} A (\frac{1}{T^{2}} - \frac{1}{T_{d}^{2}}) + B (\frac{1}{T} - \frac{1}{T_{d}}) - C \ln \frac{T}{T_{d}} - D (T - T_{d}) - \frac{1}{2} L (T^{2} - T_{d}^{2})]$$
+(42)
+donde hemos considerado que en $T = T_d$, $C_a = 0$.
+
+[Figura: Fig. 1. Densidad de la niebla (gr/m^3)]
+**Fig. 1. Densidad de la niebla ($\text{gr}/\text{m}^3$) cuando la saturación es alcanzada a $10^\circ C \text{ y } 15^\circ C$**.
+
+Si queremos conocer el enfriamiento necesario para alcanzar una concentración de agua líquida de $C = 1 \text{ gr}/\text{m}^3$ cuando la saturación es alcanzada a $10^\circ C$, la figura muestra un enfriamiento de $\Delta t \approx 1.6^\circ C$. En cambio, si la saturación es alcanzada a $15^\circ C$ el enfriamiento es de $\Delta t \approx 1.1^\circ C$. Es decir, $\Delta t$ es más grande entre más baja sea la temperatura a la cual la saturación es alcanzada. Por esta razón, las nieblas densas son menos frecuentes a bajas temperaturas que a temperaturas templadas.
+
+---
+
+## Procesos Adiabáticos e Isobáricos (Isoentálpicos). Temperatura Equivalente y del Bulbo Húmedo.
+
+Consideremos un sistema consistente de aire saturado o no saturado y agua. La misma teoría se puede aplicar cuando tenemos en lugar de agua líquida, hielo, con las correspondientes sustituciones.
+En este sistema vamos a considerar un proceso **adiabático e isobárico** y por lo tanto, **isoentálpico**. En este caso, la expresión:
+$$d h = d \hat{q} + v d P$$
+(43)
+se reduce a:
+$$d h = 0 \Rightarrow h = cte$$
+(44)
+Por lo que:
+$$C_{pd} T + \mathcal{l}_{v} r = cte$$
+(45)
+
+Si consideramos dos estados del sistema ligados por medio de un proceso adiabático e isobárico, entonces de acuerdo con la ec. (45) tendremos que:
+$$T' + \frac{\mathcal{l}_{v}}{C_{pd}} r' = T + \frac{\mathcal{l}_{v}}{C_{pd}} r$$
+(46)
+
+Vamos a suponer que en este proceso $\mathcal{l}_v$ se mantiene aproximadamente constante mientras el sistema pasa del estado no saturado $(T, r)$ al estado saturado o no saturado $(T', r')$ en donde $r' > r$. Esto implica que el agua líquida en el seno del sistema se evapora incrementando la razón de mezcla $r$ a $r'$. Como el proceso es adiabático, el calor absorbido en la evaporación (**calor latente**) debe ser provisto por el aire mismo, por lo que su temperatura decrece de $T \text{ a } T'$ para que la entalpía se mantenga constante y la ec. (46) sea satisfecha.
+Este proceso de enfriamiento isoentálpico por evaporación de agua líquida en la atmósfera es irreversible ya que el proceso opuesto de condensación adiabática e isobárica es imposible.
+
+### Temperatura Equivalente.
+
+La **temperatura isobárica equivalente** o simplemente la **temperatura equivalente** ($T_e$), se define como la temperatura que el aire podría alcanzar si éste quedara completamente seco por la condensación de todo su vapor de agua; este proceso virtual se llevaría a cabo **adiabática e isobáricamente**. De esta manera, tendremos que la temperatura alcanza su valor máximo y $r=0$; es decir:
+$$T_{e} = T + \frac{\mathcal{l}_{v}}{C_{pd}} r$$
+(47)
+
+Introduciendo valores numéricos para $\mathcal{l}_v \text{ y } C_{pd}$:
+$$T_{e} = T + 2.987 \times 10^{3} K (r)$$
+(48)
+o si $r$ se expresa directamente en $\text{gr}/\text{Kg}$:
+$$T_{e} = T + 2.5 r$$
+(49)
+
+De esta manera, si por ejemplo, $r = 25 \text{ gr}/\text{Kg}$, entonces:
+$$T_{e} = T + 62.5 K$$
+es decir, la temperatura se elevaría $62.5 K$ por la condensación completa de $25 \text{ gr}/\text{Kg}$ de vapor.
+
+Ahora vamos a considerar que en el proceso isoentálpico vamos del estado inicial $(T, r)$ al estado $(T_w, r_w)$, en donde el aire se ha saturado de vapor de agua. Este proceso está relacionado con el uso del **psicrómetro de bulbo húmedo**, que consiste de dos termómetros, uno con un **bulbo seco** para medir la temperatura del aire $T$ y el otro con su bulbo cubierto con una muselina humedecida con agua. El aire debe fluir alrededor del bulbo húmedo, y si no está saturado el agua se evapora del bulbo hasta que el aire circundante se satura. De esta manera la ec. (46) puede expresarse como:
+$$T_{w} + \frac{\mathcal{l}_{v}}{C_{pd}} r_{w} = T + \frac{\mathcal{l}_{v}}{C_{pd}} r$$
+(50)
+
+Como el sistema es adiabático, el calor necesario para evaporar el agua y aumentar la razón de mezcla de $r \text{ a } r_w$ es suministrado por el aire circundante disminuyendo su temperatura de $T \text{ a } T_w$.
+
+La temperatura $T_w$ es la **temperatura isobárica del bulbo húmedo** o simplemente la **temperatura del bulbo húmedo**.
+
+La temperatura del bulbo húmedo se define como la temperatura que alcanza el aire cuando el agua en su seno es evaporada hasta alcanzar la saturación, mientras el sistema se mantiene a presión constante y no intercambia calor con sus alrededores.
+En la práctica meteorológica la temperatura isobárica del bulbo húmedo es un valor conocido por medición directa.
+
+La ec. (50) puede ser usada para determinar la presión del vapor $e$, la humedad relativa $U_w$ o la temperatura del punto de rocío $T_d$.
+Usando la aproximación:
+$$r \approx \frac{0.622 e}{P}$$
+(51)
+la ec. (50) puede expresarse como:
+$$T_{w} + \frac{0.622 \mathcal{l}_{v} e_{w} (T_{w})}{C_{pd} P} = T + \frac{0.622 \mathcal{l}_{v} e}{C_{pd} P}$$
+(52)
+de donde:
+$$e = e_{w} (T_{w}) - \frac{C_{pd} P}{0.622 \mathcal{l}_{v}} (T - T_{w})$$
+(53)
+
+La ec. (53) es conocida como **ec. psicrométrica**. El coeficiente $\frac{C_{pd}}{0.622 \mathcal{l}_{v}}$ es llamado **constante psicrométrica**.
+
+Conocidas la temperatura del aire $T$ y la temperatura del bulbo húmedo $T_w$ y la presión $P$ de la ec. psicrométrica, podemos conocer la presión del vapor $e$.
+
+De la relación:
+$$U_{w} = \frac{e}{e_{w}(T)}$$
+(54)
+podemos determinar la **humedad relativa** $U_w$, y de la expresión:
+$$-\ln U_{w} = \frac{\mathcal{l}_{v}}{R_{v}} \frac{T-T_{d}}{T T_{d}}$$
+(55)
+podemos determinar la **temperatura del punto de rocío** $T_d$, la cual también puede determinarse de la ec.
+$$e_{w} (T_{d}) = e$$
+(56)
+
+Si el bulbo del termómetro en lugar de estar humedecido con agua líquida, está cubierto por una capa delgada de hielo, en este caso tendremos que:
+$$e = e_{i} (T_{i}) - \frac{C_{pd} P}{0.622 \mathcal{l}_{s}} (T - T_{i})$$
+(57)
+donde $T_i$ es la temperatura isobárica del bulbo con hielo; en este caso el equilibrio se alcanza por la sublimación del hielo por la ventilación del bulbo del termómetro.
+
+La identificación de la temperatura $T_w$ definida por la ec. (53) con la temperatura leída en el termómetro de bulbo húmedo está sujeta a verificación experimental pues la lectura no será satisfactoria si no hay una adecuada ventilación. En todo caso, la constante psicrométrica puede ser modificada dependiendo de la ventilación.
+Si la ventilación es adecuada ($\approx 3.5 \text{ m/s}$):
+$$\frac{C_{pd}}{0.622 \mathcal{l}_{v}} = 6.48 \times 10^{-4} K^{-1}$$
+(58a)
+$$\frac{C_{pd}}{0.622 \mathcal{l}_{s}} = 5.72 \times 10^{-4} K^{-1}$$
+(58b)
+
+Si la ventilación es inadecuada; por ejemplo, entre $0.5 \text{ a } 1.5 \text{ m/s}$, entonces se debe multiplicar la constante psicrométrica por un factor:
+$$\frac{C_{pd}}{0.622 \mathcal{l}_{v}} K_{v} = 12.0 \times 10^{-4} K^{-1}; K_{v} = 1.852$$
+(59a)
+$$\frac{C_{pd}}{0.622 \mathcal{l}_{s}} K_{s} \approx 10.6 \times 10^{-4} K^{-1}; K_{s} = 1.853$$
+(59b)
+
+Otro importante proceso meteorológico que puede tener lugar adiabática e isobáricamente, es el enfriamiento en un determinado nivel, por la evaporación de la lluvia que se precipita. En dicho nivel el aire puede o no puede alcanzar la saturación. Si la saturación es alcanzada entonces la temperatura decrece a $T_w$.
+
+De la definición de $T_e$ por (47) y vemos que $T_e, T_w \text{ y } r$ están ligadas por la ec. (50):
+$$T_{e} = T + \frac{\mathcal{l}_{v}}{C_{pd}} r = T_{w} + \frac{\mathcal{l}_{v}}{C_{pd}} r_{w}$$
+(60)
+De esta manera $T_e \text{ y } T_w$ son los valores máximos y mínimos, respectivamente, que la temperatura del aire puede alcanzar en un proceso isoentálpico. De esta manera:
+$$T_{e} > T > T_{w}$$
+(61)
+
+Considerando el hecho de que: $r \approx 0.622 e/P \text{ y } r' \approx 0.622 e'/P$, resulta que la ecuación (46)
+$$T' + \frac{\mathcal{l}_{v}}{C_{pd}} r' = T + \frac{\mathcal{l}_{v}}{C_{pd}} r$$
+puede expresarse como:
+$$e = e' - \frac{C_{pd}}{0.622 \mathcal{l}_{v}} (T - T') P$$
+(62)
+Esta ecuación lineal puede expresarse gráficamente en el siguiente **diagrama $e \text{ vs } T$**:
+
+[Figura: Fig. VI-6. Proceso adiabático e isobárico]
+**Fig. VI-6. Proceso adiabático e isobárico representado sobre el diagrama $(e, T)$**.
+Muestra la curva de condensación y evaporación isoentálpica, la temperatura equivalente $T_e$ y la temperatura del bulbo húmedo $T_w$.
+
+---
+
+## Mezcla Adiabática e Isobárica (Mezclado Horizontal).
+
+[Figura: Masa de aire $m_1$ y $m_2$ en un perfil isobárico]
+Consideremos dos masas de aire no saturado, $m_1 \text{ y } m_2$, con diferentes temperaturas y humedades específicas, las cuales se mueven sobre una superficie isobárica, las cuales llegan a mezclarse sin haber condensación.
+
+En este caso las entalpías de cada una de las dos masas de aire estarán dadas por:
+$$h_{1} = C_{p1} T + c t e_{1}$$
+(1)
+$$h_{2} = C_{p2} T + c t e_{2}$$
+(2)
+El calor específico a presión constante para las masas $m_1 \text{ y } m_2$ estará dado por:
+$$C_{pi} = C_{pd} (1 + 0.87 q_{i}); \quad i=1, 2$$
+(3)
+
+La entalpía de la mezcla estará dada por:
+$$H = m_{1} h_{1} + m_{2} h_{2}$$
+(4)
+donde $m_1 \text{ y } m_2$ son las masas; $m = m_1 + m_2$ es la masa total; y $m_1 q_1 + m_2 q_2$ es la masa total del vapor de agua, la cual permanece constante y es igual a $m q_m$, siendo $q_m$ la humedad específica de la mezcla. Por lo tanto $q_m$ resulta ser el promedio pesado de $q_1 \text{ y } q_2$, dado por:
+$$q = \frac{m_{1} q_{1} + m_{2} q_{2}}{m}$$
+(4)
+De esta manera en el **proceso isoentálpico de mezcla** se tiene que:
+$$\Delta H = m_{1} \Delta h_{1} + m_{2} \Delta h_{2} = 0$$
+(5)
+donde de acuerdo con (1), (2) y (3) se tiene que:
+$$m_{1} C_{pd} (1 + 0.87 q_{1}) (T - T_{1}) + m_{2} C_{pd} (1 + 0.87 q_{2}) (T - T_{2}) = 0$$
+(6)
+donde $T$ es la temperatura de la mezcla.
+Resolviendo se tiene que:
+$$T = \frac{(m_{1} T_{1} + m_{2} T_{2}) + 0.87 (m_{1} q_{1} T_{1} + m_{2} q_{2} T_{2})}{m + 0.87 (m_{1} q_{1} + m_{2} q_{2})}$$
+(7)
+
+Introduciendo la ec. (4) en (7) se tiene que:
+$$T = \frac{(m_{1} T_{1} + m_{2} T_{2}) + 0.87 (m_{1} q_{1} T_{1} + m_{2} q_{2} T_{2})}{m (1 + 0.87 q)}$$
+(8)
+
+Despreciando los términos en $q$, la ec. (8) se reduce a:
+$$T = \frac{m_{1} T_{1} + m_{2} T_{2}}{m}$$
+(9)
+Es decir, la temperatura de la mezcla es aproximadamente el **promedio pesado** de las temperaturas de cada uno de los componentes.
+Ahora multiplicamos a ambos lados de la ec. (9) por $(1000/P)^{\kappa_d}$ (tomando en cuenta que $P$ es constante); encontramos que la **temperatura potencial** $\theta$ de la mezcla es también aproximadamente el promedio pesado de las temperaturas potenciales de cada componente:
+$$\theta = \frac{m_{1} \theta_{1} + m_{2} \theta_{2}}{m}$$
+(10)
+
+Si usamos la aproximación $q \approx 0.622 e/P$ en la ec. (4) encontramos que la **presión parcial** de la mezcla es:
+$$e = \frac{m_{1} e_{1} + m_{2} e_{2}}{m}$$
+(11)
+
+Las ecuaciones (4), (9) y (11) indican que los valores finales de la mezcla $q, T \text{ y } e$ se obtienen calculando los promedios de los valores de cada componente pesados con sus respectivas masas.
+
+La ec. (9) puede expresarse como:
+$$\frac{T-T_{1}}{T_{2}-T} = \frac{m_{2}}{m_{1}}$$
+(12)
+en donde hemos usado el hecho de que $m = m_1 + m_2$.
+
+De la misma manera (11) puede expresarse como:
+$$\frac{e-e_{1}}{e_{2}-e} = \frac{m_{2}}{m_{1}}$$
+(13)
+
+Igualando (12) y (13), encontramos que:
+$$e = (\frac{e_{2}-e_{1}}{T_{2}-T_{1}}) T + \frac{e_{1} T_{2} - e_{2} T_{1}}{T_{2}-T_{1}}$$
+(14)
+La relación (14) representa una **línea recta** en el diagrama $e \text{ vs } T$ en donde $P_1 (e_1, T_1) \text{ y } P_2 (e_2, T_2)$ representan los estados de temperatura y humedad de las dos masas de aire. El punto $P(e, T)$ de la mezcla se encuentra sobre la línea recta que une a $P_1 \text{ y } P_2$.
+
+[Figura: Fig. VI-2. Presión del vapor (mb) para una mezcla de aire]
+**Fig. VI-2. Presión del vapor (mb) para una mezcla de aire cuyos componentes tienen una humedad relativa de $75\% \text{ y } 60\%$**.
+En este ejemplo, la temperatura de la mezcla es $315 K$ y la presión de vapor es de $71.80 \text{ mb}$ y la presión del vapor de saturación es $81.72 \text{ mb}$, y por lo tanto la humedad relativa de la mezcla es de $88\%$, lo cual es superior a la humedad relativa de cada una de las componentes, sin alcanzar la saturación.
+
+## Mezcla Horizontal - Isoentálpica con Condensación.
+
+[Figura: Fig. VI-8. Condensación producida por mezcla horizontal isoentálpica]
+**Fig. VI-8. Condensación producida por mezcla horizontal isoentálpica.**
+Muestra las curvas de saturación y la línea de mezcla recta $P_1 P_2$, donde la mezcla en el punto $P(T, e)$ está sobresaturada. La condensación ocurre a lo largo del proceso isoentálpico $P P'(T', e'_w)$.
+
+Cuando hay una apreciable **sobresaturación** en la atmósfera por mezcla horizontal isoentálpica, el proceso de **condensación de vapor de agua** ocurre y la razón de mezcla $r$ se reduce.
+
+El aire sobresaturado es representado en el diagrama anterior por el punto $P(T, e)$, seguido por la condensación del vapor de agua hasta alcanzar la presión del vapor de saturación, por un proceso isoentálpico representado por la línea recta $P P'$. El calor latente liberado en la condensación es responsable de calentar el aire y elevar su temperatura de $T \text{ a } T'$.
+
+La cantidad de **agua líquida producida por unidad de masa** es:
+$$q - q'_{w} = r - r'_{w} = \frac{0.622}{P} (e - e'_{w})$$
+(15)
+donde $(e - e'_{w})$ está representado en el diagrama por el segmento $P P'$.
+
+La correspondiente **concentración de agua líquida por unidad de volumen** estará dada por:
+$$\Delta C = - \frac{1}{R_{v} T} (e'_{w} - e)$$
+(16)
+
+---
+
+## Saturación de Aire por Ascenso Adiabático.
+
+Vamos a considerar la saturación de una parcela debido a una **expansión adiabática** durante su ascenso.
+
+Si diferenciamos logarítmicamente la definición de $U_w$ obtenemos que:
+$$d \ln U_{w} = d \ln e - d \ln e_{w}$$
+(1)
+Durante el ascenso podemos suponer que no entra ni sale agua de la parcela; por lo tanto, si la parcela no alcanza el nivel de saturación:
+$$\frac{e}{P} = \chi_{v} = \frac{\gamma}{\epsilon + \gamma} = cte$$
+(2)
+Por consiguiente si a la ec. de Poisson:
+$$T P^{-\kappa_{d}} = cte$$
+(3)
+la multiplicamos por $(e/P)^{\chi_v}$ obtendremos que:
+$$T e^{-\chi_{v}} P^{\chi_{v} - \kappa_{d}} = \chi_{v} cte = cte'$$
+(4)
+donde hemos usado la ec. (2). Ahora obtenemos el logaritmo natural de (4) y el resultado lo diferenciamos, resultando que:
+$$d \ln T = \chi_{d} d \ln e$$
+(5)
+De esta manera, usando la ec. de Clausius-Clapeyron:
+$$d \ln e_{w} = \frac{\mathcal{l}_{v}}{R_{v} T^{2}} d T$$
+(6)
+y la ec. (5) en la ec. (1), obtenemos que:
+$$d \ln U_{w} = \frac{1}{\chi_{d}} \frac{d \ln T}{d T} - \frac{\mathcal{l}_{v}}{R_{v} T^{2}} d T$$
+(7)
+
+La ec. (7) puede expresarse como:
+$$\frac{d U_{w}}{U_{w}} = (\frac{1}{\chi_{d}} - \frac{\mathcal{l}_{v}}{R_{v} T}) \frac{d T}{T}$$
+(8)
+Usando el hecho de que $\chi_d = R_d / C_{pd} \text{ y } R_v = R_d / \epsilon$, encontramos que:
+$$\frac{d U_{w}}{U_{w}} = (\frac{C_{pd} T - 0.622 \mathcal{l}_{v}}{R_{d} T}) \frac{d T}{T}$$
+(9)
+
+Dado que $0.622 \mathcal{l}_v / C_{pd} \approx 1,500^\circ K$, resulta que para temperaturas atmosféricas:
+$$T < 0.622 \mathcal{l}_{v} / C_{pd}$$
+(10)
+por lo tanto, la expresión dentro del paréntesis en la ec. (9) resulta ser **negativa** y por consiguiente $U_w$ se incrementa cuando $T$ decrece durante el enfriamiento por **expansión adiabática**.
+
+Si integramos la ec. (7) desde un **estado de referencia** $(T_o, U_{w_o})$ a un estado $(T, U_w)$ obtenemos que:
+$$\ln \frac{U_{w}}{U_{w_{o}}} = \frac{1}{\chi_{d}} \ln \frac{T}{T_{o}} + \frac{\mathcal{l}_{v}}{R_{v}} (\frac{1}{T} - \frac{1}{T_{o}})$$
+(11)
+donde hemos supuesto que $\mathcal{l}_v$ se mantiene constante.
+
+Si el estado final es el de saturación $U_w = 1$, entonces la temperatura alcanzada se llama **Temperatura de saturación**, y se denota por $T_s$. Por lo tanto, si el estado alcanzado es el de saturación:
+$$-\ln U_{w_{o}} = \frac{1}{\chi_{d}} \ln \frac{T_{s}}{T_{o}} + \frac{\mathcal{l}_{v}}{R_{v}} (\frac{1}{T_{s}} - \frac{1}{T_{o}})$$
+(12)
+
+La ec. (11) nos permite conocer a partir del estado de referencia $(T_o, U_{w_o})$ cualquier nuevo estado $(T, U_w)$ no saturado durante el ascenso adiabático de la parcela. Por su parte la ec. (12) nos permite conocer a partir del estado de referencia $(T_o, U_{w_o})$ la temperatura de saturación $T_s$.
+
+Ahora bien, si estamos interesados en asociar un nivel de altura $Z$ al estado $(T, U_w)$ a partir del nivel de referencia $Z_o$ asociado al estado de referencia $(T_o, U_{w_o})$, debemos utilizar la ec. de equilibrio hidrostático:
+$$\frac{d P}{d Z} = -\rho g$$
+(13)
+y la ecuación de estado:
+$$P = \rho R T$$
+(14)
+De esta manera tenemos que:
+$$d \ln P = - \frac{g}{R T} d Z$$
+(15)
+
+Ahora diferenciando logarítmicamente la ec. de Poisson (3):
+$$d \ln T = \chi_{d} d \ln P$$
+(16)
+y sustituyendo (16) en (15), tendremos que:
+$$d \ln T = - (\frac{g \chi_{d}}{R T}) d Z = - (\frac{g \chi_{d}}{R T}) d Z$$
+(17)
+Usando el hecho de que $\chi_d = R_d / C_{pd}$ resulta que:
+$$d T = -\Gamma_{d} d Z$$
+(18)
+donde $\Gamma_d = g/C_{pd} = 9.76^\circ C / Km$
+(19)
+es el **gradiente térmica vertical** a lo largo de una **adiabática no saturada**.
+
+Integrando la ec. (18) desde el nivel $Z_o$ al nivel $Z$ no saturado tendremos que:
+$$T = - \Gamma_{d} (Z - Z_{o}) + T_{o}$$
+(20)
+Lo que nos permite determinar $T$ en función de $Z$ a partir del nivel de referencia $Z_o$ en donde la temperatura de la parcela es $T_o$.
+
+[Figura: Fig. 1. Saturación y enfriamiento de una parcela no saturada]
+**Fig. 1. Saturación y enfriamiento de una parcela no saturada que asciende siguiendo un proceso adiabático; desde la superficie $Z=0$ en donde $T_o = 288 K \text{ y } U_{w_o} = 0.167$.**
+La gráfica muestra el incremento de la humedad relativa de una parcela que asciende desde la superficie $Z_o = 0$, en donde su humedad relativa es de $16.7\%$ ($U_{w_o} = 0.167$) y su temperatura es de $14.8^\circ C$ ($T_o = 288 K$), hasta rebasar el nivel de saturación en donde la humedad relativa es de $100\%$. La curva $\Gamma_d = 9.76$ es la adiabática seca.
+
+En la gráfica, el **nivel de saturación** es $Z_s = 3.07 Km$ y la **temperatura de saturación** es $T_s = 258 K (-15^\circ C)$.
+
+Ahora vamos a aplicar la ec. (4) al ascenso adiabático en donde la parcela de aire pasa del estado inicial $(T, e)$ al estado final $(T_s, e_{w_s})$; en este caso:
+$$T e^{-\chi_{v}} = T_{s} e_{w} (T_{s})^{-\chi_{v}} = cte$$
+(21)
+de donde:
+$$e = e_{w} (T_{s}) (\frac{T}{T_{s}})^{1/\chi_{d}}$$
+(22)
+dado que $1/\chi_d \approx 3.5$, la ec. (22) representa una curva en el diagrama $e \text{ vs } T$ con pendiente menor que la curva de presión de vapor de saturación.
+
+[Figura: Fig. 2. Variación de la temperatura del punto de rocío]
+**Fig. 2. Variación de la temperatura del punto de rocío y de la temperatura en una expansión adiabática.**
+Muestra la curva de saturación y las variaciones de $T$ y $T_d$ en un enfriamiento isobárico y una expansión adiabática.
+
+De acuerdo con la definición de la temperatura del punto de rocío:
+$$e = e_{w} (T_{d})$$
+(23)
+De manera que la ec. (5) puede expresarse como:
+$$d \ln T = \chi_{d} d \ln e_{w} (T_{d})$$
+(24)
+Utilizando la ec. de Clausius-Clapeyron en la ec. (24) obtenemos que:
+$$\frac{d T}{T} = \chi_{d} \frac{\mathcal{l}_{v}}{R_{v} T_{d}^{2}} d T_{d}$$
+(25)
+Usando el hecho de que $\chi_d = R_d / C_{pd} \text{ y } R_v = R_d / \epsilon$, resulta que:
+$$\frac{d T_{d}}{T_{d}} = (\frac{C_{pd} \epsilon \mathcal{l}_{v}}{0.622 \mathcal{l}_{v}}) \frac{d T}{T}$$
+(26)
+Por ejemplo para una temperatura de punto de rocío de $0^\circ C$, tendremos que:
+$$\frac{\Delta T_{d}}{T_{d}} \approx \frac{1}{6} \frac{\Delta T}{T}$$
+(27)
+Es decir, si en el ascenso adiabático la parcela experimenta un enfriamiento $\Delta T$ y en el nuevo nivel la parcela experimenta un enfriamiento isobárico, tal y como se muestra en la Fig. 2, entonces la temperatura del punto de rocío habrá decrecido tan solo una sexta parte de $\Delta T$.
+
+Ahora vamos a encontrar una relación entre la **depresión $T-T_d$** y la **altura $\Delta Z$ del nivel de saturación**:
+La ec. (26) puede expresarse como:
+$$\frac{d T_{d}}{T_{d}^{2}} = (\frac{C_{pd} \epsilon}{\mathcal{l}_{v}}) \frac{d T}{T^{2}}$$
+(28)
+Integrando la ec. (28) de $T_d \text{ a } T'_d \text{ y de } T \text{ a } T'$ se tiene que:
+$$\frac{T_{d} - T'_{d}}{T_{d} T'_{d}} = (\frac{C_{pd} \epsilon}{\mathcal{l}_{v}}) \frac{T - T'}{T T'}$$
+(29)
+En el **nivel de saturación**, en donde según la Fig. 2, la curva de saturación es alcanzada en la expansión adiabática, las temperaturas $T \text{ y } T_d$ son tales que $T = T_d = T_s$. Por lo tanto, la ec. (29) puede expresarse como:
+$$\frac{T - T_{s}}{T T_{s}} = (\frac{C_{pd} \epsilon}{\mathcal{l}_{v}}) \ln \frac{T}{T_{s}}$$
+(30)
+Evaluando la ec. (20) en $Z_s = Z_o + \Delta Z$, tenemos que:
+$$T_{s} = T - \Gamma_{d} \Delta Z$$
+(31)
+en donde hemos cambiado $\Delta Z$ por $T$. De esta manera, sustituyendo la ec. (31) en la ec. (30), obtenemos que:
+$$\frac{\Gamma_{d} \Delta Z - (T - T_{d})}{T_{d} (T - \Gamma_{d} \Delta Z)} = (\frac{C_{pd} \epsilon}{\mathcal{l}_{v}}) \ln [\frac{T}{T - \Gamma_{d} \Delta Z}]$$
+(32)
+Tomando $\Gamma_d \Delta Z / T = x$, se tiene que la ec. (32) puede expresarse como:
+$$\frac{\Delta Z - (T - T_{d})}{T T_{d} (1 - x)} = (\frac{C_{pd} \epsilon}{\mathcal{l}_{v}}) \ln (\frac{1}{1 - x})$$
+(33)
+Tomando por ejemplo $\Delta Z = 3 Km \text{ y } T = 288 K$, resulta que: $x \ll 1$, de esta manera si tomamos $\Gamma_d \Delta Z / T \approx x$, resulta que:
+$$\ln (\frac{1}{1 - x}) \approx x$$
+(34)
+por lo que la ec. (33) puede aproximarse a:
+$$\frac{\Gamma_{d} \Delta Z - (T - T_{d})}{T T_{d}} \approx (\frac{C_{pd} \epsilon}{\mathcal{l}_{v}}) \frac{\Gamma_{d} \Delta Z}{T}$$
+(35)
+De donde se tiene que:
+$$T - T_{d} \approx [\frac{\epsilon \mathcal{l}_{v} - C_{pd} T_{d}}{\epsilon \mathcal{l}_{v}}] \Gamma_{d} \Delta Z$$
+(36)
+o también:
+$$\Delta Z = [\frac{\epsilon \mathcal{l}_{v}}{\epsilon \mathcal{l}_{v} - C_{pd} T_{d}}] \frac{1}{\Gamma_{d}} (T - T_{d})$$
+(37)
+Por ejemplo, para $T_d = 273.16 (0^\circ C)$:
+$$\Delta Z \approx 0.12 (T - T_{d}) \quad (\text{en } Km)$$
+(38)
+
+---
+
+## Procesos Adiabáticos Reversibles y Seudo-Adiabáticos Irreversibles.
+
+Cuando discutimos el ascenso adiabático de una **parcela seca** encontramos que los cambios en su temperatura están gobernados por las ecs. de Poisson; es decir, la **temperatura potencial** $\theta$ es una constante del proceso. Vimos también que para el caso de una **parcela no saturada** los cambios en su temperatura pueden ser descritos satisfactoriamente considerando que $\theta_{m} \approx \theta \text{ y } q$ también es una constante del proceso.
+
+Tan pronto como la parcela se satura ocurre la condensación de vapor de agua y la formación de la nube, entonces grandes diferencias aparecen, dado que el calor latente liberado calienta al aire saturado y al agua condensada en la parcela; de esta manera la razón a la cual una **parcela saturada** se enfría resulta menor que la razón a la cual una **parcela no saturada** se enfría.
+
+Podemos pensar que ocurren dos casos extremos en la atmósfera:
+1.  **Reversible**: En el primero podemos suponer que todos los productos de la condensación, como gotas de agua y/o cristales de hielo, permanecen en el seno de la parcela, en este caso la masa total de agua: $m_v + m_w$ permanece constante. El calor latente liberado calienta el aire seco, el vapor de agua y los productos de la condensación; tal proceso es **adiabático** porque no entra ni sale calor del sistema y es **reversible** en el sentido de que eventualmente la parcela puede descender y calentarse por la compresión adiabática, este calentamiento produce la evaporación de las gotas de agua y/o la sublimación de los cristales de hielo. De esta manera estamos ante un **proceso adiabático-reversible**.
+
+    Si el proceso es **adiabático-reversible**, entonces es **isoentrópico**. La entropía para este sistema está dada por:
+    $$S \approx (m_{a} C_{pa} + m_{v} C_{w}) \ln T - m_{d} R_{d} \ln P + \frac{l_{v}}{T} (m_{w} + m_{i}) + S_{o}$$
+    (39)
+    donde $m_d = m_v + m_w$ es la masa total de agua en su fase gaseosa y su fase líquida, la cual es constante. Y $S_o$ es una constante de referencia. En la ec. (39) no estamos considerando cristales de hielo como productos de la condensación sino únicamente agua líquida.
+
+2.  **Irreversible (Seudo-adiabático)**: En el segundo caso consideramos que todos los productos de la condensación se precipitan fuera de la parcela inmediatamente después de su formación. De esta manera, el sistema es abierto y no conserva su masa de agua y por ello es **irreversible**. Concretamente, consideremos una parcela de aire saturado que inicialmente se eleva y se expande conforme la presión de los alrededores decrece. El calor latente será liberado a una cierta razón conforme se forman los productos de la condensación y se precipitan fuera. Si más tarde la parcela cambia de dirección y comienza a hundirse, la compresión causará una elevación de la temperatura. Sin embargo, el calor sensible liberado no se transformará de nuevo en calor latente, como en el caso del proceso reversible, dado que el agua (o el hielo) no está presente y no puede ser evaporado. De esta manera la parcela incrementará su temperatura a la misma razón que en un **proceso adiabático de una parcela seca**, la cual es diferente de la razón a la cual se enfrió durante la expansión en su ascenso. En este caso la parcela no puede retornar a su estado original sin alteración de sus alrededores, una condición que representa en esencia un **proceso irreversible**. Además como el agua sale fuera de la parcela se lleva consigo cierta cantidad de calor, por lo que el proceso es **no-adiabático**.
+
+[Figura: Fig. 3. Diagrama de la trayectoria de una parcela sobre una montaña]
+**Fig. 3. Trayectoria de una parcela de aire sobre una montaña.**
+La figura muestra una parcela de aire con una temperatura de $t=20^\circ C$ y una temperatura de punto de rocío de $t_d = 12^\circ C$, lo cual da una razón de mezcla de $r = 9 \text{ gr}/\text{Kg}$ (Fig. 4). La parcela inicialmente en un nivel de $Z \approx 150 \text{ mts}$ es forzada a ascender por una ladera de la montaña hasta su cima situada a unos $3,400 \text{ mts}$ (o $80 \text{ mb}$) para después descender por la ladera opuesta a unos $350 \text{ mts}$. De acuerdo con el termodiagrama de la Fig. 4, la saturación es alcanzada arriba de los $1,000 \text{ mts}$ en donde $t_s = t_d = -2^\circ C$ y su razón de mezcla es ahora de $r = 5 \text{ gr}/\text{Kg}$. Es decir, ha perdido por precipitación $4 \text{ gr}/\text{Kg}$ de agua líquida. Al descender por la ladera opuesta a unos $2,400 \text{ mts}$ de altura, de acuerdo con su razón de mezcla de $r = 5 \text{ gr}/\text{Kg}$ (la cual ahora es conservada), su temperatura de punto de rocío es $t_d = 0^\circ C \text{ y } t = 8^\circ C$. Al descender $2,000 \text{ mts}$ más, $t_d = 2^\circ C \text{ y } t = 18^\circ C$, y finalmente al llegar al nivel de unos $350 \text{ mts}, t_d = 4^\circ C \text{ y } t = 28^\circ C$.
+
+[Figura: Fig. 4. Termodiagrama Diagonal T, log P]
+**Fig. 4. Proceso Seudo-Adiabático-Irreversible de una parcela que asciende por la ladera de una montaña y pierde parte de su masa de agua por precipitación (Fig. 3).**
+
+La situación real de la atmósfera se encuentra entre estos dos extremos, pues parte del agua condensada puede precipitarse fuera de la parcela y parte puede quedarse en ella constituyendo la nube. Afortunadamente la razón de mezcla $r_w$ es pequeña, tal que la cantidad de agua condensada que puede salir fuera no puede llevar consigo una cantidad importante de calor de modo que el proceso puede ser considerado como **casi-adiabático**, se dice que el proceso es **seudo-adiabático**.
+
+Por ejemplo, supongamos que $5 \text{ gr}$ de agua condensada se precipitan fuera de una parcela de $1 \text{ Kg}$ de aire. Si consideramos un cierto enfriamiento $\Delta T$ por la expansión adiabática-saturada, entonces el calor que puede ser suplido por estos $5 \text{ gr}$ de agua en relación al suplido por el Kilogramo de aire es:
+$$\frac{5 \text{ gr} \times C_w \times \Delta T}{10^3 \text{ gr} \times C_{pd} \times \Delta T} = \frac{5 \times 1.0}{10^3 \times 0.17} \approx \frac{1}{34}$$
+(40)
+de modo que la ausencia de estos $5 \text{ gr}$ de agua puede tener solo un $3\%$ de efecto sobre el proceso de enfriamiento de la parcela. Podemos concluir que la razón a la cual el aire saturado se enfría en un **proceso seudo-adiabático** es esencialmente igual a la razón de enfriamiento en un **proceso adiabático-reversible**.
+
+De esta manera, en un **proceso seudo-adiabático irreversible**, suponemos que en la ec. (39) $m_w = 0$, de modo que (39) puede expresarse como:
+$$(C_{pd} + C_{w} r_{w}) \ln T - R_{d} \ln P + \frac{\mathcal{l}_{v} r_{w}}{T} = cte$$
+(41)
+La ec. (41) puede aproximarse a:
+$$C_{pd} \ln T - R_{d} \ln P + \frac{\mathcal{l}_{v} r_{w}}{T} = cte$$
+(42)
+
+Debido a que $r_w \approx \frac{\epsilon e_w(T)}{P}$ es función de $T \text{ y } P$, la ec. (42) establece una **curva pseudo-adiabática** en un diagrama $P \text{ vs } T$.
+La ec. (42) puede expresarse como:
+$$\ln \theta + \frac{\mathcal{l}_{v} r_{w}}{C_{pd} T} = cte$$
+(43)
+Consideremos dos estados: $T, P \text{ y } T', P'$ conectados por un **proceso seudo-adiabático**, de modo que:
+$$\ln \theta + \frac{\mathcal{l}_{v} r_{w}}{C_{pd} T} = \ln \theta' + \frac{\mathcal{l}_{v} r'_{w}}{C_{pd} T'}$$
+(44)
+donde $\theta' = T' (\frac{1000}{P'})^{\kappa_d}; \theta = T (\frac{1000}{P})^{\kappa_d} \text{ y } r_{w} \approx \frac{\epsilon e_{w} (T)}{P}, r'_{w} \approx \frac{\epsilon e_{w} (T')}{P'}$
+(45)
+
+Podemos considerar el estado final $T', P'$ como aquel en el cual toda el agua se ha condensado y precipitado fuera de la parcela, en este caso: $r'_{w} = 0$, y por definición $\theta' = \theta_{ae}$, de modo que:
+$$\ln \theta_{ae} = \ln \theta + \frac{\mathcal{l}_{v} r_{w}}{C_{pd} T}$$
+(46)
+o también:
+$$\theta_{ae} = \theta e^{\frac{\mathcal{l}_{v} r_{w}}{C_{pd} T}}$$
+(47)
+donde $\theta_{ae}$ es llamada **temperatura potencial adiabática equivalente**.
+
+Por lo tanto, podemos decir que la **temperatura potencial adiabática equivalente** es una **cantidad conservada** en un **proceso seudo-adiabático**.
+
+La ec. (46) o (47) establece en un termodiagrama las **curvas seudo-adiabáticas saturadas** para diferentes valores de $\theta_{ae}$, las cuales se hacen asintóticas, en niveles bajos en presión, a las **adiabáticas secas** cuyo valor numérico es igual a $\theta_{ae}$, tal y como se muestra en la Fig. 6.
+
+## Temperaturas Seudo-Adiabáticas Equivalente y del Bulbo Húmedo.
+
+La fórmula:
+$$T_{e} = T_{w} + \frac{\mathcal{l}_{v} r_{w}}{C_{pd}} = T + \frac{\mathcal{l}_{v} r}{C_{pd}}$$
+(48)
+la cual se derivó a partir de considerar un **proceso adiabático e isobárico (isoentálpico)**, no es una expresión conveniente para determinar las temperaturas equivalentes y del bulbo húmedo sobre un diagrama termodinámico. Sin embargo, existen otras temperaturas cercanas a las anteriores que pueden ser definidas y encontradas fácilmente sobre un diagrama meteorológico.
+
+Sea $P_{c}$ un punto sobre el diagrama (Fig. 5) que representa el estado de una parcela de aire con una razón de mezcla $r$. Supongamos que esta parcela se expande adiabáticamente hasta alcanzar la saturación en donde la adiabática no saturada se intersecta con la **línea de razón de mezcla de saturación** $r_w(T_s) = r$. Este punto característico se designa por $P_s$ en la Fig. 5. La isoterma que pasa por este punto corresponde a la **temperatura de saturación** $T_s$.
+
+Una **adiabática saturada** debe pasar por $P_s$ y si seguimos dicha adiabática hasta alcanzar la presión original $P$, llegamos al punto $P_w$, en donde la temperatura se llama **temperatura pseudo-adiabática del bulbo húmedo**, y se denota por $T_{aw}$.
+
+Vimos que $T_w$ es la temperatura que alcanza la parcela de aire cuando el agua líquida en su seno es evaporada hasta que la saturación es alcanzada, mientras la parcela se mantiene a presión constante y no intercambia calor con sus alrededores. $T_{aw}$ es **adiabático** pero **no isobárico**, resulta pues, que para ir del punto $P_s$ al punto $P_w$ a través de la adiabática saturada **debemos imaginar que hay que suministrar agua líquida a la parcela en la misma proporción que la perdió durante el proceso seudo-adiabático seguido en su ascenso; para que dicha agua sea evaporada y mantenga a la parcela saturada**. Por esta razón la temperatura $T_{aw}$ se asocia con la temperatura del bulbo húmedo. Resulta que:
+$$T_{aw} < T_{w}$$
+(49)
+
+Si la parcela continúa ascendiendo después del punto $P_s$ a lo largo de la adiabática saturada, el agua que se condensa sale de la parcela de manera que el vapor de agua dentro de la parcela se irá terminando hasta que $r \approx 0$, momento en el cual la adiabática saturada tocará de manera asintótica a la **adiabática seca**. En este punto la parcela se ha secado completamente. Si ahora la parcela desciende lo hará necesariamente a lo largo de la adiabática seca, llegando al nivel de presión $P$ en el punto $P_e$, la temperatura que alcanza la parcela se le llama **temperatura adiabática equivalente**, $T_{ae}$.
+Resulta que:
+$$T_{ae} > T_{e}$$
+(50)
+
+Si prolongamos la adiabática saturada $P_s P_w$ al nivel del $1000 \text{ mb}$ (Fig. 6), la intersección determina por definición la **temperatura potencial adiabática del bulbo húmedo**, $\theta_{aw}$. Similarmente por extensión de la adiabática seca desde $P_e$ a la intersección con el nivel de $1000 \text{ mb}$ encontramos la **temperatura potencial adiabática equivalente** $\theta_{ae}$.
+
+Vamos a considerar que en las Fig. 5 y Fig. 6:
+$$P = 850 \text{ mb}$$
+$$T = 10^\circ C$$
+$$T_d = 2^\circ C$$
+(51)
+Con estos datos, encontramos (Tarea) en un termodiagrama diagonal $T, \log P$, los siguientes resultados:
+$$r_w (T_d) = r \approx 4 \text{ gr}/\text{Kg}; T_s = -4^\circ C; T_e \approx 22^\circ C; T_{aw} \approx 4^\circ C; \theta_{ae} = 36^\circ C + 273.16$$
+
+Las **temperaturas isobárica equivalente $T_e$** e **isobárica del bulbo húmedo $T_w$** pueden determinarse de la ec. (48), es decir:
+$$T_{e} = T + \frac{\mathcal{l}_{v}}{C_{pd}} r = 10 + 273.16 + 1497 \times 0.004 \approx 293.108 K$$
+(52)
+y por su parte:
+$$T_{w} + \frac{\mathcal{l}_{v} e_{w} (T_{w})}{C_{pd} P} = T_{e}$$
+(53)
+donde hemos usado el hecho de que $r_w \approx \epsilon e_w / P$.
+La siguiente figura muestra la curva obtenida con la parte izquierda de la ec. (53) y la recta horizontal $T_e = 293.108 K$, la intersección corresponde a $T_w \approx 277.7 K$.
+Vemos que $T_{ae} \approx 22^\circ C > T_e \approx 19.9^\circ C$ y que $T_{aw} = 4^\circ C < T_w \approx 4.54^\circ C$.
+
+La diferencia $T_w - T_{aw}$ puede ser despreciada en general; sin embargo, en muchos casos no puede ser despreciada la diferencia $T_{ae} - T_e$. En nuestro ejemplo:
+$$T_{w} - T_{aw} = 0.54^\circ C$$
+$$T_{ae} - T_{e} = 2.1^\circ C$$
+(54)
+
+[Figura: Fig. 7. Solución gráfica de la ec. (53)]
+**Fig. 7. Solución gráfica de la ec. (53) para determinar la temperatura isobárica del bulbo húmedo.**
+
+***
